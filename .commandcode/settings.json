@@ -14,7 +14,8 @@
       "Shell(grep:*)",
       "Shell(tail:*)",
       "Shell(npm run dev >/tmp/dev.log 2>&1 & sleep 3 curl -s http://localhost:3000 | grep -o '<title>[^<]*</title>' | head -1)",
-      "Shell(pkill -f \"next dev\" 2>/dev/null; pkill -f \"agent-browser\" 2>/dev/null; echo done)"
+      "Shell(pkill -f \"next dev\" 2>/dev/null; pkill -f \"agent-browser\" 2>/dev/null; echo done)",
+      "Shell(bun:*)"
     ],
     "deny": [],
     "defaultMode": "default"
