@@ -12,7 +12,9 @@
       "Shell(export AGENT_BROWSER_SESSION=\"$(agent-browser session id --scope worktree --prefix task)\" echo \"SESSION=$AGENT_BROWSER_SESSION\" agent-browser open http://localhost:3000 2>&1 | tail -5 agent-browser resize 1440 900 2>&1 | tail -2 agent-browser screenshot \"$COMMANDCODE_SCRATCHPAD/before-desktop-hero.png\" 2>&1 | tail -3)",
       "Shell(export:*)",
       "Shell(grep:*)",
-      "Shell(tail:*)"
+      "Shell(tail:*)",
+      "Shell(npm run dev >/tmp/dev.log 2>&1 & sleep 3 curl -s http://localhost:3000 | grep -o '<title>[^<]*</title>' | head -1)",
+      "Shell(pkill -f \"next dev\" 2>/dev/null; pkill -f \"agent-browser\" 2>/dev/null; echo done)"
     ],
     "deny": [],
     "defaultMode": "default"

@@ -14,15 +14,16 @@ export function Reveal({
   as?: "div" | "section" | "li" | "header" | "figure";
 }) {
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(
+    () =>
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
-      return;
-    }
+    if (visible) return; // reduced-motion: already visible
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,7 +37,7 @@ export function Reveal({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [visible]);
 
   return (
     <Tag
