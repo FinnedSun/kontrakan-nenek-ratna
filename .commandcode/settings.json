@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(npx tsc --noEmit)",
+      "Shell(npm:*)",
+      "Shell(curl -s http://localhost:3000)",
+      "Shell(git:*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Shell(ls ~/Library/Caches/ms-playwright 2>/dev/null; which chromium chrome google-chrome 2>/dev/null; ls \"/Applications/Google Chrome.app\" >/dev/null 2>&1 && echo \"CHROME_APP_FOUND\"; npm ls -g --depth=0 2>/dev/null | head -20)",
+      "Shell(agent-browser:*)",
+      "Shell(export AGENT_BROWSER_SESSION=\"$(agent-browser session id --scope worktree --prefix task)\" echo \"SESSION=$AGENT_BROWSER_SESSION\" agent-browser open http://localhost:3000 2>&1 | tail -5 agent-browser resize 1440 900 2>&1 | tail -2 agent-browser screenshot \"$COMMANDCODE_SCRATCHPAD/before-desktop-hero.png\" 2>&1 | tail -3)",
+      "Shell(export:*)",
+      "Shell(grep:*)",
+      "Shell(tail:*)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

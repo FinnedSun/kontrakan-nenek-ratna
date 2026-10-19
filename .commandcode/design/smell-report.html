@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kontrakan Nenek Ratna - Smell Report</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+		.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+		.report-section { border: 1px solid #222226; background: #0a0a0b; position: relative; }
+		.corner-box { position: absolute; width: 20px; height: 20px; border: 1px solid #222226; background: #000; }
+	</style>
+</head>
+<body class="bg-black text-[#fafafa]">
+	<main class="mx-auto w-full max-w-6xl px-5 py-8 md:px-10 md:py-12">
+		<header class="report-section mb-8 p-6 md:p-8">
+			<div class="corner-box left-0 top-0 -translate-x-1/2 -translate-y-1/2"></div>
+			<div class="corner-box right-0 top-0 translate-x-1/2 -translate-y-1/2"></div>
+			<div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+				<div>
+					<div class="mono mb-2 text-xs tracking-widest text-[#666]">// SMELL</div>
+					<h1 class="text-4xl font-bold tracking-tight md:text-6xl">Kontrakan Nenek Ratna</h1>
+				</div>
+				<div class="mono text-left text-xs text-[#666] md:text-right">
+					<div>COMMANDCODE REPORT</div>
+					<div class="text-[#444]">2026-10-19</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="report-section mb-8 p-6 md:p-8">
+			<div class="corner-box left-0 top-0 -translate-x-1/2 -translate-y-1/2"></div>
+			<div class="corner-box right-0 top-0 translate-x-1/2 -translate-y-1/2"></div>
+			<div class="grid gap-8 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+				<div>
+					<div class="mono mb-2 text-xs tracking-widest text-[#666]">// OVERALL</div>
+					<div class="text-6xl font-bold tracking-tight md:text-7xl">3</div>
+					<div class="mt-1 text-lg text-[#666]">/ 10</div>
+					<div class="mt-4 inline-flex border border-[#fbbf24]/30 bg-[#fbbf24]/10 px-3 py-1 text-sm text-[#fbbf24]">STRONG</div>
+				</div>
+				<div>
+					<div class="mono mb-3 text-xs tracking-widest text-[#666]">// TL;DR</div>
+					<p class="text-sm leading-6 text-[#a0a0a0]">Median generated landing page: centered sections, four equal emoji feature tiles, emoji-as-icons, pill buttons, terracotta-on-cream domain default, zero motion. Competent but unchosen.</p>
+					<p class="mt-4 text-sm leading-6 text-[#fbbf24]">Run /design deslop: fix composition first (center stack, feature grid), then color, type, depth, motion, decoration.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="report-section mb-8 p-6 md:p-8">
+			<div class="mono mb-6 text-xs tracking-widest text-[#666]">// HEURISTIC SCORES</div>
+			<div class="overflow-x-auto">
+				<table class="w-full min-w-[720px] border-collapse text-sm">
+					<thead>
+						<tr class="border-b border-[#222226] text-left mono text-xs text-[#666]">
+							<th class="py-3 pr-4 font-normal">#</th>
+							<th class="py-3 pr-4 font-normal">ODOR</th>
+							<th class="py-3 pr-4 font-normal">ABSENT(1)/DETECTED(0)</th>
+							<th class="py-3 font-normal">KEY FINDING</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">1</td><td class="py-4 pr-4">Tech gradient</td><td class="py-4 pr-4 text-[#34d399]">1</td><td class="py-4 text-[#a0a0a0]">none</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">2</td><td class="py-4 pr-4">Generic tech hue</td><td class="py-4 pr-4 text-[#34d399]">1</td><td class="py-4 text-[#a0a0a0]">clay accent, not blue-purple</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">3</td><td class="py-4 pr-4">Feature tile grid</td><td class="py-4 pr-4 text-[#ef4444]">0</td><td class="py-4 text-[#a0a0a0]">page.tsx:92-103 four equal emoji cards</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">4</td><td class="py-4 pr-4">Accent rail</td><td class="py-4 pr-4 text-[#34d399]">1</td><td class="py-4 text-[#a0a0a0]">none</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">5</td><td class="py-4 pr-4">Unearned blur</td><td class="py-4 pr-4 text-[#ef4444]">0</td><td class="py-4 text-[#a0a0a0]">page.tsx:71 backdrop-blur-sm</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">6</td><td class="py-4 pr-4">Stat monument</td><td class="py-4 pr-4 text-[#34d399]">1</td><td class="py-4 text-[#a0a0a0]">none</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">7</td><td class="py-4 pr-4">Icon topper / emoji</td><td class="py-4 pr-4 text-[#ef4444]">0</td><td class="py-4 text-[#a0a0a0]">emoji as icons throughout</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">8</td><td class="py-4 pr-4">Bounce everywhere</td><td class="py-4 pr-4 text-[#34d399]">1</td><td class="py-4 text-[#a0a0a0]">no motion at all</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">9</td><td class="py-4 pr-4">Default type</td><td class="py-4 pr-4 text-[#ef4444]">0</td><td class="py-4 text-[#a0a0a0]">Fraunces timid scale, no voice</td></tr>
+						<tr class="border-b border-[#1a1a1e]"><td class="py-4 pr-4 text-[#555]">10</td><td class="py-4 pr-4">Center stack</td><td class="py-4 pr-4 text-[#ef4444]">0</td><td class="py-4 text-[#a0a0a0]">every section centered</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="report-section mb-8 p-6 md:p-8">
+			<div class="mono mb-6 text-xs tracking-widest text-[#666]">// DOMAIN DEFAULT TRAP</div>
+			<p class="text-sm leading-6 text-[#a0a0a0]">Warm cream + terracotta + serif is the guessable homestay lane. Direction was predictable from the industry before opening the page. Break at least one dimension: add a second authored hue (deep teal-green), go editorial/asymmetric, and commit to a stronger type scale.</p>
+		</section>
+
+		<section class="report-section mb-8 p-6 md:p-8">
+			<div class="mono mb-6 text-xs tracking-widest text-[#666]">// PRIORITY ISSUES</div>
+			<div class="space-y-5">
+				<article class="border border-[#2a1d22] bg-[#110b0d] p-5">
+					<div class="mono mb-2 text-xs text-[#f43f5e]">P0</div>
+					<h2 class="mb-2 text-lg font-semibold">Feature tile grid + emoji icons</h2>
+					<p class="mb-4 text-sm leading-6 text-[#a0a0a0]">page.tsx:92-103 four equal cards with emoji toppers; emoji reused as icons across specs, lists, CTAs.</p>
+					<div class="border-l border-[#fbbf24] pl-4 text-sm leading-6 text-[#fbbf24]">FIX: asymmetric editorial reasons list with numerals 01-04 and rules; replace emoji with inline SVG line icons or typographic markers.</div>
+				</article>
+				<article class="border border-[#2a1d22] bg-[#110b0d] p-5">
+					<div class="mono mb-2 text-xs text-[#f43f5e]">P0</div>
+					<h2 class="mb-2 text-lg font-semibold">Center stack everywhere</h2>
+					<p class="mb-4 text-sm leading-6 text-[#a0a0a0]">Every section heading + sub centered with max-w mx-auto (85,88,179,182,199,202).</p>
+					<div class="border-l border-[#fbbf24] pl-4 text-sm leading-6 text-[#fbbf24]">FIX: left-aligned editorial headers with eyebrow + rule; vary alignment per section.</div>
+				</article>
+				<article class="border border-[#2a1d22] bg-[#110b0d] p-5">
+					<div class="mono mb-2 text-xs text-[#f43f5e]">P1</div>
+					<h2 class="mb-2 text-lg font-semibold">Domain-default palette + unauthored badges</h2>
+					<p class="mb-4 text-sm leading-6 text-[#a0a0a0]">Single terracotta on cream; default bg-green-100/text-green-800 badges.</p>
+					<div class="border-l border-[#fbbf24] pl-4 text-sm leading-6 text-[#fbbf24]">FIX: two-hue authored palette (clay + deep teal-green on paper); author status chips.</div>
+				</article>
+				<article class="border border-[#2a1d22] bg-[#110b0d] p-5">
+					<div class="mono mb-2 text-xs text-[#f43f5e]">P1</div>
+					<h2 class="mb-2 text-lg font-semibold">No motion, unearned blur, pill reflex</h2>
+					<p class="mb-4 text-sm leading-6 text-[#a0a0a0]">Fully static page; backdrop-blur-sm on hero secondary; rounded-full pills on every CTA.</p>
+					<div class="border-l border-[#fbbf24] pl-4 text-sm leading-6 text-[#fbbf24]">FIX: reduced-motion-aware scroll reveal with sharp decel + stagger; opaque secondary; small-radius buttons.</div>
+				</article>
+			</div>
+		</section>
+
+		<footer class="mono py-8 text-center text-xs tracking-widest text-[#444]">
+			Generated with CommandCode - 2026-10-19
+		</footer>
+	</main>
+</body>
+</html>
